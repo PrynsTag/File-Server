@@ -8,9 +8,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Command command = new Command();
 
-        while (true) {
+        while (!scanner.hasNext("exit")) {
             String action = scanner.next();
-            if ("exit".equals(action)) break;
             String filename = scanner.next();
 
             switch (action) {
